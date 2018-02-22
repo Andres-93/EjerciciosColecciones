@@ -20,7 +20,26 @@ public class Ejercicio1 {
 			mostrarRobots(lista);
 			robotsMasMitadVida(lista);
 			imprimerLos3DeMasVida(lista);
+			//metodoBurbujaOrdenacion(lista);
 	}
+	/*
+	private static void metodoBurbujaOrdenacion(ArrayList<Robot> lista) {
+		Robot aux = null;
+		
+		for(int i = 0; i < (lista.size()-1); i++)
+			for(int j = (i+1); j < lista.size()-1; j++) {
+				
+				if(lista.get(i).getVida() > lista.get(j).getVida()) {
+					
+					aux = lista.get(i);				
+					lista.set(i, lista.get(j));
+					lista.set(j, aux);
+				}
+			
+			}
+		
+	}
+	*/
 	/*
 	 * Imprimir los 3 robots de mas vida.
 	 */
@@ -68,6 +87,8 @@ public class Ejercicio1 {
 		
 		
 	}
+	
+	
 
 	private static void rellenarLista(ArrayList<Robot> lista) {
 		
@@ -85,7 +106,7 @@ public class Ejercicio1 {
 		
 		Random rd = new Random();
 		
-		int aleatorio = rd.nextInt(10-1+1)+1;
+		int aleatorio = rd.nextInt(100-1+1)+1;
 		
 		return aleatorio;
 	}	
