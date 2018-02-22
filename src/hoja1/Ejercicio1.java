@@ -21,7 +21,9 @@ public class Ejercicio1 {
 			robotsMasMitadVida(lista);
 			imprimerLos3DeMasVida(lista);
 	}
-
+	/*
+	 * Imprimir los 3 robots de mas vida.
+	 */
 	private static void imprimerLos3DeMasVida(ArrayList<Robot> lista) {
 
 		int cont = 0;
@@ -83,7 +85,7 @@ public class Ejercicio1 {
 		
 		Random rd = new Random();
 		
-		int aleatorio = rd.nextInt(100-1+1)+1;
+		int aleatorio = rd.nextInt(10-1+1)+1;
 		
 		return aleatorio;
 	}	
