@@ -7,6 +7,7 @@ import java.util.Random;
 
 public class Ejercicio1 {
 	
+	private static final int LIMITE_VIDA_MOSTRAR = 50;
 	private static final int NUMERO_ROBOTS = 10;
 
 
@@ -65,7 +66,7 @@ public class Ejercicio1 {
 		
 		for(Robot e : lista) {
 			
-			if(e.getVida() >= 50) {
+			if(e.getVida() >= LIMITE_VIDA_MOSTRAR) {
 				System.out.println("El robot " + e.getNombre() + " tiene mas del 50% de vida");
 			}
 		}
